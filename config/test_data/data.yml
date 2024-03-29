@@ -1,0 +1,58 @@
+# This section is populated with Environment data required to execute automated test suites on all supported environments
+Environments:
+  LOCAL:
+    IOS_BUNDLE_ID: 'org.reactjs.native.example.wdiodemoapp'
+    IOS_APP_PATH: '/Users/Shared/Test_Apps/iOS/wdiodemoapp.app'
+    IOS_TEST_ID: 'WDIODemoAppiOS'
+    ANDROID_APP_ID: 'com.wdiodemoapp'
+    ANDROID_APK_PATH: '/Users/Shared/Test_Apps/Android/android.wdio.native.app.v1.0.8.apk'
+    ANDROID_TEST_ID: 'WDIODemoAppAndroid'
+
+# This section is populated with Capabilities data used for establishing connections to locally hosted iOS simulators
+# and Android virtual devices
+Capabilities:
+  iPhone:
+    :device_type: :phone
+    :driver: :appium
+    :driver_name: :iphone_driver
+    :capabilities:
+      :platformName: :ios
+      :'appium:platformVersion': '15.4'
+      :'appium:deviceName': 'iPhone 13 Pro Max'
+      :'appium:automationName': 'XCUITest'
+      :'appium:app': '/Users/Shared/Test_Apps/iOS/wdiodemoapp.app'
+      :'appium:noReset': true
+  android_phone:
+    :device_type: :phone
+    :driver: :appium
+    :driver_name: :android_phone_driver
+    :capabilities:
+      :platformName: :android
+      :'appium:platformVersion': '12.0'
+      :'appium:deviceName': 'Pixel_5_API_31'
+      :'appium:avd': 'Pixel_5_API_31'
+      :'appium:automationName': 'UiAutomator2'
+      :'appium:app': '/Users/Shared/Test_Apps/Android/android.wdio.native.app.v1.0.8.apk'
+      :'appium:chromedriverExecutable': '/Users/Shared/config/webdrivers/chromedriver'
+      :'appium:noReset': true
+
+# This section is populated with Carousel item data required for testing the Swipe features
+Carousel_data:
+  '1':
+    card_title: 'FULLY OPEN SOURCE'
+    card_detail: 'WebdriverIO is fully open source and can be found on GitHub'
+  '2':
+    card_title: 'GREAT COMMUNITY'
+    card_detail: 'WebdriverIO has a great community that supports all members.'
+  '3':
+    card_title: 'JS.FOUNDATION'
+    card_detail: 'The JS Foundation is host to projects that span the entire JavaScript ecosystem.'
+  '4':
+    card_title: 'SUPPORT VIDEOS'
+    card_detail: 'The community around WebdriverIO is actively speaking on various user groups or conferences about specific topics around automated testing with WebdriverIO.'
+  '5':
+    card_title: 'EXTENDABLE'
+    card_detail: 'Adding helper functions, or more complicated sets and combinations of existing commands is simple and really useful'
+  '6':
+    card_title: 'COMPATIBLE'
+    card_detail: 'WebdriverIO works in combination with most of the TDD and BDD test frameworks in the JavaScript world'
