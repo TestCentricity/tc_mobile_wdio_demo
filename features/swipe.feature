@@ -1,4 +1,4 @@
-@mobile @ios @android @regression @bat
+@mobile @ios @android @regression
 
 
 Feature:  Swipe
@@ -11,7 +11,7 @@ Feature:  Swipe
     Given I have launched the WDIO Demo app
     And I am on the Swipe screen
 
-
+@bat
   Scenario:  Verify horizontal scrolling gestures
     Then I expect the Swipe screen to be correctly displayed
 

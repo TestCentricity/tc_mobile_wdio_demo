@@ -28,8 +28,8 @@ report: <%= reports %> REPORTING=true
 
 bat_ios: -p bat -p ios_sim -p local
 bat_android: -p bat -p android_sim -p local
-regress_ios: -p ios_sim -p local
-regress_android: -p android_sim -p local
+regress_ios: -p regress -p ios_sim -p local
+regress_android: -p regress -p android_sim -p local
 
 
 #==============
@@ -48,31 +48,32 @@ landscape: ORIENTATION=landscape
 portrait:  ORIENTATION=portrait
 
 
-  #==============
-  # profile to start Appium Server prior to running mobile browser tests on iOS or Android simulators or physical devices
-  #==============
+#==============
+# profile to start Appium Server prior to running mobile browser tests on iOS or Android simulators or physical devices
+#==============
 run_appium: APPIUM_SERVER=run
+appium_1x: APPIUM_SERVER_VERSION=1
 
 
-  #==============
-  # conditionally load Page and Screen Object implementations based on which target platform we're running on
-  #==============
+#==============
+# conditionally load Page and Screen Object implementations based on which target platform we're running on
+#==============
 
 ios:     PLATFORM=ios --tags @ios -r features/support/ios -e features/support/android <%= mobile %>
 android: PLATFORM=android --tags @android -r features/support/android -e features/support/ios <%= mobile %>
 
 
-  #==============
-  # profiles for native iOS apps hosted within XCode iOS simulators
-  # NOTE: Requires installation of XCode, iOS version specific target simulators, and Appium
-  #==============
+#==============
+# profiles for native iOS apps hosted within XCode iOS simulators
+# NOTE: Requires installation of XCode, iOS version specific target simulators, and Appium
+#==============
 
 ios_sim: W3C_CAPS=iPhone -p ios -p run_appium
 
 
-  #==============
-  # profiles for native Android apps hosted within Android Studio Android Virtual Device emulators
-  # NOTE: Requires installation of Android Studio, Android version specific virtual device simulators, and Appium
-  #==============
+#==============
+# profiles for native Android apps hosted within Android Studio Android Virtual Device emulators
+# NOTE: Requires installation of Android Studio, Android version specific virtual device simulators, and Appium
+#==============
 
 android_sim: W3C_CAPS=android_phone -p android -p run_appium

@@ -122,7 +122,7 @@ version-specific virtual device emulators. The capabilities profiles in <code>da
 </thead><tbody>
 <tr>
 <td><code>:iPhone</code></td>
-<td>&#39;15.4&#39;</td>
+<td>&#39;17.2&#39;</td>
 <td>&#39;iPhone 13 Pro Max&#39;</td>
 </tr>
 <tr>
@@ -175,6 +175,12 @@ supported (they are defined in <code>cucumber.yml</code>):</p>
 <pre class="code ruby"><code class="ruby">    bundle exec cucumber -p regress_android
 </code></pre>
 
+<p>If you are running locally hosted mobile tests using version 1.x of Appium server, you must include <code>-p appium_1x</code> in
+   your command line:</p>
+
+<pre class="code ruby"><code class="ruby">    bundle exec cucumber -p regress_ios -p appium_1x
+</code></pre>
+
 <p>ℹ️ <strong>NOTE:</strong>
     * Appium will automatically be started prior to tests being run on locally hosted simulators.</p>
 
@@ -206,7 +212,7 @@ can be accessed from the <code>index.html</code> file within the <code>doc</code
 </div></div>
 
       <div id="footer">
-  Generated on Fri Mar 29 14:53:41 2024 by
+  Generated on Fri Apr  5 12:19:50 2024 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.36 (ruby-3.0.0).
 </div>
