@@ -51,7 +51,7 @@ version-specific virtual device emulators. The capabilities profiles in `data.ym
 
 | Mobile device    | OS version ('appium:platformVersion':) | Device name ('appium:deviceName': / 'appium:avd':) |
 |------------------|----------------------------------------|----------------------------------------------------|
-| `:iPhone`        | '15.4'                                 | 'iPhone 13 Pro Max'                                |
+| `:iPhone`        | '17.2'                                 | 'iPhone 13 Pro Max'                                |
 | `:android_phone` | '12.0'                                 | 'Pixel_5_API_31'                                   |
 
 If you prefer to run tests against mobile devices using simulators other than the ones already preconfigured, you can
@@ -89,6 +89,11 @@ supported (they are defined in `cucumber.yml`):
    To execute the regression test suite on an Android phone, execute the following command in the Terminal:
 
         bundle exec cucumber -p regress_android
+
+   If you are running locally hosted mobile tests using version 1.x of Appium server, you must include `-p appium_1x` in
+   your command line:
+
+        bundle exec cucumber -p regress_ios -p appium_1x
 
    ℹ️ **NOTE:**
     * Appium will automatically be started prior to tests being run on locally hosted simulators.

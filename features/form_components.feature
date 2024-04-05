@@ -1,4 +1,4 @@
-@mobile @ios @android @regression @bat
+@mobile @ios @android @regression
 
 
 Feature:  Form Components
@@ -20,7 +20,7 @@ Feature:  Form Components
     When I type text into the input field
     Then I expect what I typed to be displayed in the result field
 
-
+@bat
   Scenario:  Verify toggle switch
     When I turn the switch on
     Then I expect the switch on state to be correctly displayed
@@ -34,7 +34,7 @@ Feature:  Form Components
     When I close the drop-down menu
     Then I expect the drop-down menu to be closed
 
-
+@bat
   Scenario Outline:  Verify selection made from drop-menu
     When I open the drop-down menu
     And I select an item in the menu by its <method>
@@ -49,7 +49,7 @@ Feature:  Form Components
     |method |
     |index  |
 
-
+@bat
   Scenario Outline:  Verify alert modal interactions
     When I tap the Active button
     Then the popup request modal should be visible
