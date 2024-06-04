@@ -12,8 +12,8 @@ class FormScreen < BaseWDIODemoAppScreen
   buttons   active_button:    { accessibility_id: 'button-Active' },
             inactive_button:  { accessibility_id: 'button-Inactive' },
             close_drop_menu:  { accessibility_id: 'done_button' }
-  list      :drop_down_menu,  { xpath: '//XCUIElementTypePicker[@name="Dropdown picker"]/XCUIElementTypePickerWheel' }
-  labels    header_label:     { xpath: '//XCUIElementTypeStaticText[@name="Form components"]' },
+  list      :drop_down_menu,  { predicate: 'type == "XCUIElementTypePickerWheel"' }
+  labels    header_label:     { predicate: 'name == "Form components"' },
             typed_value:      { accessibility_id: 'input-text-result' },
             switch_state:     { accessibility_id: 'switch-text' }
 

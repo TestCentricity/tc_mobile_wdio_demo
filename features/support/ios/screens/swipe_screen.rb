@@ -6,11 +6,11 @@ class SwipeScreen < BaseWDIODemoAppScreen
   trait(:navigator)      { go_to_swipe }
 
   # Swipe screen UI elements
-  labels  header_label:   { xpath: '//XCUIElementTypeStaticText[@name="Swipe horizontal"]' },
+  labels  header_label:   { predicate: 'name == "Swipe horizontal"' },
           swipe_message:  { accessibility_id: "Or swipe vertical to find what I'm hiding." },
-          found_message:  { xpath: '//XCUIElementTypeStaticText[@name="You found me!!!"]' }
+          found_message:  { predicate: 'name == "You found me!!!"' }
   list    :carousel_list, { accessibility_id: 'Carousel' }
-  image   :logo_image,    { xpath: '//XCUIElementTypeOther[@name="WebdriverIO logo"]/XCUIElementTypeImage' }
+  image   :logo_image,    { predicate: 'type == "XCUIElementTypeImage"' }
   section :carousel_item, CarouselItem
 
   def initialize

@@ -6,7 +6,7 @@ class DragDropScreen < BaseWDIODemoAppScreen
   trait(:navigator)      { go_to_drag }
 
   # Drag and Drop screen UI elements
-  labels   header_label:      { xpath: '//XCUIElementTypeStaticText[@name="Drag and Drop"]' },
+  labels   header_label:      { predicate: 'name == "Drag and Drop"' },
            retry_message:     { accessibility_id: 'You made it, click retry if you want to try it again.' }
   elements left_row_1_drop:   { accessibility_id: 'drop-l1' },
            left_row_2_drop:   { accessibility_id: 'drop-l2' },
