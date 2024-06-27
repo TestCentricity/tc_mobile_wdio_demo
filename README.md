@@ -1,13 +1,13 @@
 # tc_mobile_wdio_demo
 
-This is a Cucumber based sample test suite and framework utilizing the TestCentricity™ Mobile gem and a screen-object
+This is a Cucumber based sample test suite and framework utilizing the TestCentricity™ For Apps gem and a screen-object
 model architecture for native mobile app functional testing of the [WebDriverIO Demo app](https://github.com/webdriverio/native-demo-app). The tests in
 this example project are designed to support testing of [version 1.0.8](https://github.com/webdriverio/native-demo-app/releases/tag/v1.0.8) of the WebDriverIO Demo app.
 
 ![WebDriverIO Demo app](https://raw.githubusercontent.com/TestCentricity/tc_mobile_wdio_demo/main/.github/images/WDIO_Demo_app.png)
 
 The primary purpose of this example test suite and framework is to demonstrate how to implement a cross platform automated
-testing solution for an iOS and Android mobile app using Cucumber, Appium, and the TestCentricity™ Mobile gem. This test
+testing solution for an iOS and Android mobile app using Cucumber, Appium, and the TestCentricity™ For Apps gem. This test
 suite includes scenarios for interacting with and validating the following functionality:
   * Switches
   * Listviews
@@ -21,14 +21,14 @@ suite includes scenarios for interacting with and validating the following funct
 
 cucumber  [![Gem Version](https://badge.fury.io/rb/cucumber.svg)](https://badge.fury.io/rb/cucumber)
 
-testcentricity_mobile  [![Gem Version](https://badge.fury.io/rb/testcentricity_mobile.svg)](https://badge.fury.io/rb/testcentricity_mobile)
+testcentricity_apps  [![Gem Version](https://badge.fury.io/rb/testcentricity_apps.svg)](https://badge.fury.io/rb/testcentricity_apps)
 
 
 ## Supporting Documentation
 
-[TestCentricity Mobile Framework - testcentricity_mobile gem](https://rubygems.org/gems/testcentricity_mobile)
+[TestCentricity For Apps Framework - testcentricity_apps gem](https://rubygems.org/gems/testcentricity_apps)
 
-[TestCentricity Mobile - documentation](http://www.rubydoc.info/gems/testcentricity_mobile/)
+[TestCentricity For Apps - documentation](http://www.rubydoc.info/gems/testcentricity_apps/)
 
 
 ## Prerequisites to running tests:
@@ -55,8 +55,8 @@ version-specific virtual device emulators. The capabilities profiles in `data.ym
 | `:android_phone` | '12.0'                                 | 'Pixel_5_API_31'                                   |
 
 If you prefer to run tests against mobile devices using simulators other than the ones already preconfigured, you can
-edit the capabilities profiles in the `data.yml` file. Refer to [**section 8.2 (Connecting to Locally Hosted Simulators or Physical Devices)**](https://www.rubydoc.info/gems/testcentricity_mobile#connecting-to-locally-hosted-simulators-or-physical-devices)
-of the TestCentricity Mobile gem documentation for information on specifying the desired capabilities for mobile simulators
+edit the capabilities profiles in the `data.yml` file. Refer to [**section 10.2 (Connecting to Locally Hosted Simulators or Physical Devices)**](https://www.rubydoc.info/gems/testcentricity_apps#connecting-to-locally-hosted-simulators-or-physical-devices)
+of the TestCentricity For Apps gem documentation for information on specifying the desired capabilities for mobile simulators
 and devices.
 
 You will also need to download version 1.0.8 of the iOS (`.app` and/or `.ipa`) and Android (`.apk`) apps to your workstation,
