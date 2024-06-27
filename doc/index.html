@@ -14,8 +14,6 @@
 
   <link rel="stylesheet" href="css/common.css" type="text/css" />
 
-  <link rel="stylesheet" href="css/cucumber.css" type="text/css" />
-
 <script type="text/javascript">
   pathId = "README";
   relpath = '';
@@ -25,8 +23,6 @@
   <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
 
   <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
-
-  <script type="text/javascript" charset="utf-8" src="js/cucumber.js"></script>
 
 
   </head>
@@ -47,8 +43,8 @@
 
         <div id="search">
   
-    <a class="full_list_link" id="feature_list_link"
-        href="feature_list.html">
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
 
         <svg width="24" height="24">
           <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
@@ -63,14 +59,14 @@
 
       <div id="content"><div id='filecontents'><h1 id="tc_mobile_wdio_demo">tc_mobile_wdio_demo</h1>
 
-<p>This is a Cucumber based sample test suite and framework utilizing the TestCentricity™ Mobile gem and a screen-object
+<p>This is a Cucumber based sample test suite and framework utilizing the TestCentricity™ For Apps gem and a screen-object
 model architecture for native mobile app functional testing of the <a href="https://github.com/webdriverio/native-demo-app">WebDriverIO Demo app</a>. The tests in
 this example project are designed to support testing of <a href="https://github.com/webdriverio/native-demo-app/releases/tag/v1.0.8">version 1.0.8</a> of the WebDriverIO Demo app.</p>
 
 <p><img src="https://raw.githubusercontent.com/TestCentricity/tc_mobile_wdio_demo/main/.github/images/WDIO_Demo_app.png" alt="WebDriverIO Demo app"></p>
 
 <p>The primary purpose of this example test suite and framework is to demonstrate how to implement a cross platform automated
-testing solution for an iOS and Android mobile app using Cucumber, Appium, and the TestCentricity™ Mobile gem. This test
+testing solution for an iOS and Android mobile app using Cucumber, Appium, and the TestCentricity™ For Apps gem. This test
 suite includes scenarios for interacting with and validating the following functionality:</p>
 
 <ul>
@@ -86,13 +82,13 @@ suite includes scenarios for interacting with and validating the following funct
 
 <p>cucumber  <a href="https://badge.fury.io/rb/cucumber"><img src="https://badge.fury.io/rb/cucumber.svg" alt="Gem Version"></a></p>
 
-<p>testcentricity_mobile  <a href="https://badge.fury.io/rb/testcentricity_mobile"><img src="https://badge.fury.io/rb/testcentricity_mobile.svg" alt="Gem Version"></a></p>
+<p>testcentricity_apps  <a href="https://badge.fury.io/rb/testcentricity_apps"><img src="https://badge.fury.io/rb/testcentricity_apps.svg" alt="Gem Version"></a></p>
 
 <h2 id="supporting-documentation">Supporting Documentation</h2>
 
-<p><a href="https://rubygems.org/gems/testcentricity_mobile">TestCentricity Mobile Framework - testcentricity_mobile gem</a></p>
+<p><a href="https://rubygems.org/gems/testcentricity_apps">TestCentricity For Apps Framework - testcentricity_apps gem</a></p>
 
-<p><a href="http://www.rubydoc.info/gems/testcentricity_mobile/">TestCentricity Mobile - documentation</a></p>
+<p><a href="http://www.rubydoc.info/gems/testcentricity_apps/">TestCentricity For Apps - documentation</a></p>
 
 <h2 id="prerequisites-to-running-tests">Prerequisites to running tests:</h2>
 
@@ -133,8 +129,8 @@ version-specific virtual device emulators. The capabilities profiles in <code>da
 </tbody></table>
 
 <p>If you prefer to run tests against mobile devices using simulators other than the ones already preconfigured, you can
-edit the capabilities profiles in the <code>data.yml</code> file. Refer to <a href="https://www.rubydoc.info/gems/testcentricity_mobile#connecting-to-locally-hosted-simulators-or-physical-devices"><strong>section 8.2 (Connecting to Locally Hosted Simulators or Physical Devices)</strong></a>
-of the TestCentricity Mobile gem documentation for information on specifying the desired capabilities for mobile simulators
+edit the capabilities profiles in the <code>data.yml</code> file. Refer to <a href="https://www.rubydoc.info/gems/testcentricity_apps#connecting-to-locally-hosted-simulators-or-physical-devices"><strong>section 10.2 (Connecting to Locally Hosted Simulators or Physical Devices)</strong></a>
+of the TestCentricity For Apps gem documentation for information on specifying the desired capabilities for mobile simulators
 and devices.</p>
 
 <p>You will also need to download version 1.0.8 of the iOS (<code>.app</code> and/or <code>.ipa</code>) and Android (<code>.apk</code>) apps to your workstation,
@@ -212,9 +208,9 @@ can be accessed from the <code>index.html</code> file within the <code>doc</code
 </div></div>
 
       <div id="footer">
-  Generated on Fri Apr 26 13:28:20 2024 by
+  Generated on Wed Jun 26 19:42:39 2024 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.9.36 (ruby-3.0.0).
+  0.9.36 (ruby-3.1.0).
 </div>
 
     </div>

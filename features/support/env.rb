@@ -1,8 +1,7 @@
 # frozen_string_literal: true
 
-require 'parallel_tests'
 require 'require_all'
-require 'testcentricity_mobile'
+require 'testcentricity_apps'
 
 include TestCentricity
 
@@ -34,8 +33,7 @@ Faker::Config.locale = ENV['LOCALE']
 
 # instantiate all data objects and target test environment
 include WorldData
-ENV['DATA_SOURCE'] = 'yaml' unless ENV['DATA_SOURCE']
-environs.find_environ(ENV['TEST_ENVIRONMENT'], ENV['DATA_SOURCE'].downcase.to_sym)
+environs.find_environ(ENV['TEST_ENVIRONMENT'], :yaml)
 WorldData.instantiate_data_objects
 
 # instantiate all screen objects
