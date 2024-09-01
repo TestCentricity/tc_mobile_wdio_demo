@@ -1,8 +1,8 @@
 # tc_mobile_wdio_demo
 
 This is a Cucumber based sample test suite and framework utilizing the TestCentricity™ For Apps gem and a screen-object
-model architecture for native mobile app functional testing of the [WebDriverIO Demo app](https://github.com/webdriverio/native-demo-app). The tests in
-this example project are designed to support testing of [version 1.0.8](https://github.com/webdriverio/native-demo-app/releases/tag/v1.0.8) of the WebDriverIO Demo app.
+model architecture for native mobile app functional testing of the [WebDriverIO Demo app](https://github.com/webdriverio/native-demo-app). The tests in this example
+project are designed to support testing of [version 1.0.8](https://github.com/webdriverio/native-demo-app/releases/tag/v1.0.8) of the WebDriverIO Demo app.
 
 ![WebDriverIO Demo app](https://raw.githubusercontent.com/TestCentricity/tc_mobile_wdio_demo/main/.github/images/WDIO_Demo_app.png)
 
