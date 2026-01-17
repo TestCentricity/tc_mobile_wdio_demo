@@ -1,13 +1,13 @@
 # tc_mobile_wdio_demo
 
-This is a Cucumber based sample test suite and framework utilizing the TestCentricity™ For Apps gem and a screen-object
+This is a Cucumber based sample test suite and framework utilizing the TestCentricity™ For Mobile gem and a screen-object
 model architecture for native mobile app functional testing of the [WebDriverIO Demo app](https://github.com/webdriverio/native-demo-app). The tests in this example
 project are designed to support testing of [version 1.0.8](https://github.com/webdriverio/native-demo-app/releases/tag/v1.0.8) of the WebDriverIO Demo app.
 
 ![WebDriverIO Demo app](https://raw.githubusercontent.com/TestCentricity/tc_mobile_wdio_demo/main/.github/images/WDIO_Demo_app.png)
 
 The primary purpose of this example test suite and framework is to demonstrate how to implement a cross platform automated
-testing solution for an iOS and Android mobile app using Cucumber, Appium, and the TestCentricity™ For Apps gem. This test
+testing solution for an iOS and Android mobile app using Cucumber, Appium, and the TestCentricity™ For Mobile gem. This test
 suite includes scenarios for interacting with and validating the following functionality:
   * Switches
   * Listviews
@@ -15,20 +15,21 @@ suite includes scenarios for interacting with and validating the following funct
   * Carousel lists
   * Swipe gestures
   * UI element drag and drop actions
-
+  * Populating forms with data
+  * Verification of multiple properties of multiple screen UI elements
 
 ## Gem Dependencies:
 
 cucumber  [![Gem Version](https://badge.fury.io/rb/cucumber.svg)](https://badge.fury.io/rb/cucumber)
 
-testcentricity_apps  [![Gem Version](https://badge.fury.io/rb/testcentricity_apps.svg)](https://badge.fury.io/rb/testcentricity_apps)
+testcentricity_mobile  [![Gem Version](https://badge.fury.io/rb/testcentricity_mobile.svg)](https://badge.fury.io/rb/testcentricity_mobile)
 
 
 ## Supporting Documentation
 
-[TestCentricity For Apps Framework - testcentricity_apps gem](https://rubygems.org/gems/testcentricity_apps)
+[TestCentricity For Mobile Framework - testcentricity_mobile gem](https://rubygems.org/gems/testcentricity_mobile)
 
-[TestCentricity For Apps - documentation](http://www.rubydoc.info/gems/testcentricity_apps/)
+[TestCentricity For Mobile - documentation](http://www.rubydoc.info/gems/testcentricity_mobile/)
 
 
 ## Prerequisites to running tests:
@@ -55,8 +56,8 @@ version-specific virtual device emulators. The capabilities profiles in `data.ym
 | `:android_phone` | '12.0'                                 | 'Pixel_5_API_31'                                   |
 
 If you prefer to run tests against mobile devices using simulators other than the ones already preconfigured, you can
-edit the capabilities profiles in the `data.yml` file. Refer to [**section 10.2 (Connecting to Locally Hosted Simulators or Physical Devices)**](https://www.rubydoc.info/gems/testcentricity_apps#connecting-to-locally-hosted-simulators-or-physical-devices)
-of the TestCentricity For Apps gem documentation for information on specifying the desired capabilities for mobile simulators
+edit the capabilities profiles in the `data.yml` file. Refer to [**section 10.2 (Connecting to Locally Hosted Simulators or Physical Devices)**](https://www.rubydoc.info/gems/testcentricity_mobile#connecting-to-locally-hosted-simulators-or-physical-devices)
+of the TestCentricity For Mobile gem documentation for information on specifying the desired capabilities for mobile simulators
 and devices.
 
 You will also need to download version 1.0.8 of the iOS (`.app` and/or `.ipa`) and Android (`.apk`) apps to your workstation,
@@ -89,11 +90,6 @@ supported (they are defined in `cucumber.yml`):
    To execute the regression test suite on an Android phone, execute the following command in the Terminal:
 
         bundle exec cucumber -p regress_android
-
-   If you are running locally hosted mobile tests using version 1.x of Appium server, you must include `-p appium_1x` in
-   your command line:
-
-        bundle exec cucumber -p regress_ios -p appium_1x
 
    ℹ️ **NOTE:**
     * Appium will automatically be started prior to tests being run on locally hosted simulators.

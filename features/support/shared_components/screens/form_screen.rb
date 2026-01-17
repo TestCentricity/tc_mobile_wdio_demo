@@ -5,12 +5,12 @@ module SharedFormScreen
     ui = {
       header_label => {
         visible: true,
-        caption: 'Form components'
+        caption: { translate: 'wdio.form_screen.header' }
       },
       input_field => {
         visible: true,
         enabled: true,
-        placeholder: 'Type something'
+        placeholder: { translate: 'wdio.form_screen.type_input' }
       },
       typed_value => {
         visible: true,
@@ -23,20 +23,20 @@ module SharedFormScreen
       },
       switch_state => {
         visible: true,
-        caption: 'Click to turn the switch ON'
+        caption: { translate: 'wdio.form_screen.switch' }
       },
       drop_down_field => {
         visible: true,
-        value: 'Select an item...'
+        value: { translate: 'wdio.form_screen.drop_down' }
       },
       active_button => {
         visible: true,
         enabled: true,
-        caption: 'Active'
+        caption: { translate: 'wdio.form_screen.active' }
       },
       inactive_button => {
         visible: true,
-        caption: 'Inactive'
+        caption: { translate: 'wdio.form_screen.inactive' }
       },
       drop_down_menu => { visible: false }
     }
@@ -101,11 +101,10 @@ module SharedFormScreen
     ui = {
       drop_down_field => {
         visible: true,
-        value: 'Appium is awesome'
+        value: { translate: 'wdio.form_screen.drop_selection' }
       },
       drop_down_menu => { visible: false }
     }
     verify_ui_states(ui)
-
   end
 end

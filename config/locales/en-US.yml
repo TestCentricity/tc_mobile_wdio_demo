@@ -1,0 +1,75 @@
+# Localization file for English/U.S. locale.
+
+en-US:
+  time:
+    formats:
+      default: "%m/%d/%Y"
+      long: "%B %d, %Y"
+      short: "%b %d"
+      abbrev: "%b %d, %Y"
+      abbrev_month: "%b"
+      month_year: "%B %Y"
+  date:
+    abbr_day_names:
+    - Sun
+    - Mon
+    - Tue
+    - Wed
+    - Thu
+    - Fri
+    - Sat
+    abbr_month_names:
+    -
+    - Jan
+    - Feb
+    - Mar
+    - Apr
+    - May
+    - Jun
+    - Jul
+    - Aug
+    - Sep
+    - Oct
+    - Nov
+    - Dec
+    day_names:
+    - Sunday
+    - Monday
+    - Tuesday
+    - Wednesday
+    - Thursday
+    - Friday
+    - Saturday
+    month_names:
+    -
+    - January
+    - February
+    - March
+    - April
+    - May
+    - June
+    - July
+    - August
+    - September
+    - October
+    - November
+    - December
+
+  # -------------------------------------------------------------
+  # Caption strings for WDIO Demo UI tests
+  # -------------------------------------------------------------
+  wdio:
+    form_screen:
+      header: 'Form components'
+      type_input: 'Type something'
+      switch: 'Click to turn the switch ON'
+      drop_down: 'Select an item...'
+      active: 'Active'
+      inactive: 'Inactive'
+      drop_selection: 'Appium is awesome'
+    swipe_screen:
+      header: 'Swipe horizontal'
+    drag_drop_screen:
+      header: 'Drag and Drop'
+      retry: 'Retry'
+      solved: 'You made it, click retry if you want to try it again.'

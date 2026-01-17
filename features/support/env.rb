@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require 'require_all'
-require 'testcentricity_apps'
+require 'testcentricity_mobile'
 
 include TestCentricity
 

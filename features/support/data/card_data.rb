@@ -11,10 +11,4 @@ class CardData < TestCentricity::DataPresenter
   attribute :id, Integer
   attribute :card_title, String
   attribute :card_detail, String
-
-  def initialize(data)
-    @card_title  = data[:card_title]
-    @card_detail = data[:card_detail]
-    super
-  end
 end

@@ -19,7 +19,7 @@ class FormScreen < BaseWDIODemoAppScreen
   def initialize
     super
     # define the list item element for the Drop-down list object
-    list_elements = { list_item: { xpath: '//android.widget.CheckedTextView' } }
+    list_elements = { list_item: { class: 'android.widget.CheckedTextView' } }
     drop_down_menu.define_list_elements(list_elements)
   end
 
